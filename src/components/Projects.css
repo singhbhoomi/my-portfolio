@@ -1,0 +1,39 @@
+.project-box {
+  position: relative;
+}
+
+.project-header {
+  background-color: #f0f0f0; 
+}
+
+.view-code-btn {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+
+.project-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-header h3 {
+  position: relative;
+  z-index: 1;
+  transition: text-shadow 0.3s ease;
+}
+
+.project-header:hover h3 {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7), 0 0 16px rgba(255, 255, 255, 0.6);
+}
+
+.view-code-btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.project-box:hover .view-code-btn {
+  transform: scale(1.1);
+}
