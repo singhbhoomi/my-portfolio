@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/singhbhoomi/my-portfolio.git/static/css/main.5e21e544.css",
-    "main.js": "/singhbhoomi/my-portfolio.git/static/js/main.67c1dd8c.js",
+    "main.js": "/singhbhoomi/my-portfolio.git/static/js/main.de2fda16.js",
     "static/js/453.acca0757.chunk.js": "/singhbhoomi/my-portfolio.git/static/js/453.acca0757.chunk.js",
     "static/media/slick.svg": "/singhbhoomi/my-portfolio.git/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/singhbhoomi/my-portfolio.git/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,11 +9,11 @@
     "static/media/slick.woff": "/singhbhoomi/my-portfolio.git/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/singhbhoomi/my-portfolio.git/index.html",
     "main.5e21e544.css.map": "/singhbhoomi/my-portfolio.git/static/css/main.5e21e544.css.map",
-    "main.67c1dd8c.js.map": "/singhbhoomi/my-portfolio.git/static/js/main.67c1dd8c.js.map",
+    "main.de2fda16.js.map": "/singhbhoomi/my-portfolio.git/static/js/main.de2fda16.js.map",
     "453.acca0757.chunk.js.map": "/singhbhoomi/my-portfolio.git/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5e21e544.css",
-    "static/js/main.67c1dd8c.js"
+    "static/js/main.de2fda16.js"
   ]
 }
