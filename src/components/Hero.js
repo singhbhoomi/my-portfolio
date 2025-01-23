@@ -48,7 +48,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-fixed bg-center bg-cover z-0" 
         style={{ 
-          backgroundImage: 'url("/images/hero-background.jpg")',
+          backgroundImage: 'url("/images/bhoomi.jpg")',
           transform: `translate(${backgroundPosition.x}px, ${backgroundPosition.y}px)`,
           transition: 'transform 0.1s ease-out',
         }} 
@@ -91,8 +91,8 @@ const Hero = () => {
 
         
         <motion.a
-          href="/images/Resume_B11.pdf"
-          download="Resume_B11.pdf"
+          href="/images/Resume_E1P.pdf"
+          download="Resume_E1P.pdf"
           className="bg-blue-500 text-white px-4 py-2 rounded-md mt-6 transition-transform duration-300 hover:scale-105 hover:bg-blue-600 hover:shadow-lg w-24"
           whileHover={{
             scale: 1.1,

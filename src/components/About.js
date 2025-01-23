@@ -3,51 +3,22 @@ import { motion } from 'framer-motion';
 import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaJava, FaPython } from 'react-icons/fa';
 import { SiMongodb, SiPostgresql, SiNodedotjs, SiExpress, SiNextdotjs, SiMysql, SiTailwindcss, SiGithub, SiFigma, SiFramer } from 'react-icons/si';
 
-
 const iconVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeInOut' } },
   hover: {
-    scale: 1.2,
-    rotate: [0, 10, -10, 0],
-    transition: { duration: 0.3, ease: 'easeInOut' },
-  },
-};
-
-const educationVariants = {
-  hidden: {
-    opacity: 0,
-    y: 50,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      ease: 'easeInOut',
-    },
-  },
-  exit: {
-    opacity: 0,
-    y: -50,
-    transition: {
-      duration: 0.6,
-      ease: 'easeInOut',
+    x: [0, 10, -10, 0],  // Move horizontally
+    y: [0, -10, 10, 0],   // Move vertically
+    transition: { 
+      duration: 0.3, 
+      ease: 'easeInOut' 
     },
   },
 };
-
-const shineKeyframes = `
-@keyframes shine {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
-}
-`;
 
 const About = () => {
   return (
     <section id="about" className="p-8 bg-gray-900 text-white">
-      <style>{shineKeyframes}</style>
       <div className="container mx-auto max-w-4xl">
         {/* About Me Section */}
         <motion.div
@@ -75,7 +46,7 @@ const About = () => {
             Languages & Tools
           </h3>
           <div className="flex flex-wrap justify-center gap-6">
-            {[
+            {[ 
               { Icon: FaJava, name: 'Java', color: 'text-red-600' },
               { Icon: FaPython, name: 'Python', color: 'text-blue-500' },
               { Icon: FaHtml5, name: 'HTML5', color: 'text-orange-600' },
@@ -121,30 +92,17 @@ const About = () => {
         <div className="relative flex flex-col items-center">
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 border-l-4 border-gray-700 h-full"></div>
           <div className="flex flex-col space-y-12">
-            {[
-              {
-                title: 'Seemax International School',
-                level: 'High School',
-                year: '2019',
-              },
-              {
-                title: 'Seemax International School',
-                level: 'Intermediate',
-                year: '2021',
-              },
-              {
-                title: 'GLA University',
-                level: 'Bachelor of Engineering in Computer Science',
-                year: '2021',
-              },
+            {[ 
+              { title: 'Seemax International School', level: 'High School', year: '2019' },
+              { title: 'Seemax International School', level: 'Intermediate', year: '2021' },
+              { title: 'GLA University', level: 'Bachelor of Engineering in Computer Science', year: '2021' },
             ].map((item, index) => (
               <motion.div
                 key={index}
                 className="relative bg-gray-800 p-6 rounded-lg shadow-lg"
-                variants={educationVariants}
+                variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeInOut' } } }}
                 initial="hidden"
                 whileInView="visible"
-                exit="exit"
                 viewport={{ once: false, margin: '-50px' }}
                 transition={{ delay: index * 0.3 }}
               >
